@@ -28,6 +28,7 @@ const headerItems = [
 
 const Home = () => {
   const bannerImages = [Banner1,Banner2,Banner3,Banner4,Banner5,Banner6];
+  
   return (
     <div>
         <div className='item-container'>
@@ -74,7 +75,7 @@ const Home = () => {
                                 specification={item.specification} 
                                 detail={item.detail} 
                             /> 
-                        ))} 
+                        ))}
                     </div> 
                   
                 <div style={{marginTop:"40px"}}>{/*Back to Top*/}</div>

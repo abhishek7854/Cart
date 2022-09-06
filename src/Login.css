@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 100px;
 }
 
 .login > p {
@@ -12,12 +13,16 @@
 }
 
 .login-logo {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  object-fit: contain;
-  width: 100px;
-  margin-right: auto;
-  margin-left: auto;
+
+    color: white;
+    padding: 20px;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    gap: 7px;
+    text-decoration: none;
 }
 
 .login-container {

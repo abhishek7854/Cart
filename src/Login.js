@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; 
 import { Link } from 'react-router-dom'; 
 import './Login.css'; 
+import Logo from './logo.jpg'; 
  
 const Login = () => { 
  
@@ -15,7 +16,7 @@ const Login = () => {
         <div className='login'> 
             <div className='login-second'> 
                 <Link to="/" className='login-logo'> 
-                    Phoenix 
+                <img src={Logo} alt='' style={{height:"30px",width:"40px"}}/><h4>Cart.com</h4>
                 </Link> 
                 <div className='login-container'> 
                     <h1>Sign in</h1> 
@@ -26,9 +27,9 @@ const Login = () => {
                         <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} /> 
                         <button type="submit" onclickhandler={signIn} className="login-signIn">Sign In</button> 
                     </form> 
-                    <p>By Continuing, you agree to Phoenix's Conditions of use and Privacy Notice</p> 
+                    <p>By Continuing, you agree to Cart.com Conditions of use and Privacy Notice</p> 
                 </div> 
-                <p>New to Phoenix ?</p> 
+                <p>New to Cart.com ?</p> 
                 <Link to="/register"> 
                     <button className='login-register'>Create Your Account</button> 
                 </Link> 
